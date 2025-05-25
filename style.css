@@ -1,0 +1,272 @@
+
+/* Reset + base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: border-bottom 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  border-bottom: 2px solid white;
+}
+
+
+/* Home container */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 10%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+/* Text section */
+.text-content {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  color: #333;
+}
+
+.text-content h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Image section */
+.image-container {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/*About me section */
+/* About Section */
+.about-section {
+  padding: 5rem 10%;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Skills Box */
+.skills-box {
+  background-color: #ffffff;
+  border-left: 5px solid #35A99C;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 2rem; 
+}
+
+.skills-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #35A99C;
+}
+
+.skills-box ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.skills-box li {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2b877d;
+}
+
+/*Projects section */
+.projects-section {
+  padding: 5rem 10%;
+  background-color: #eaf4fc;  /* soft contrast to about section */
+  color: #333;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #35A99C;
+}
+
+/* Project Card Box */
+.project-card {
+  background-color: #ffffff;
+  border-left: 5px solid #35A99C;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.project-title {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 0.25rem;
+}
+
+.project-dates {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.project-skills ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
+.project-links .btn {
+  display: inline-block;
+  margin: 0.25rem 1rem 0.25rem 0;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: opacity 0.3s;
+}
+
+.project-links .btn:hover {
+  opacity: 0.85;
+}
+
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 10%;
+  background-color: #74D7BB;
+  color: #333;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-header h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 14px 20px;
+  background-color: #0365c8; /* or your preferred LinkedIn-blue tone */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #024fa1; /* darker shade on hover */
+}
