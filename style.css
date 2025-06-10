@@ -161,7 +161,7 @@ body {
 /*Projects section */
 .projects-section {
   padding: 5rem 10%;
-  background-color: #eaf4fc;  /* soft contrast to about section */
+  background-color: #f1fbf8;
   color: #333;
 }
 
@@ -230,7 +230,7 @@ body {
 /* Contact Section */
 .contact-section {
   padding: 4rem 10%;
-  background-color: #74D7BB;
+  background-color: #c7efe3;
   color: #333;
 }
 
@@ -253,20 +253,3 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.contact-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  padding: 14px 20px;
-  background-color: #0365c8; /* or your preferred LinkedIn-blue tone */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
-}
-
-.contact-btn:hover {
-  background-color: #024fa1; /* darker shade on hover */
-}
